@@ -1,17 +1,7 @@
 #include <iostream>
 using namespace std;
-
-int main() {
-	int angka [5]={1,3,5,7,9};
+int main() {int cari, angka [5]={1,3,5,7,9};
 	cout<<"Masukkan angka yang ingin dicari\t:";
-	int cari;
 	cin>>cari;
-	for(int q=0;q<5;q++){
-		if (angka[q]==cari){
-			cout<<"Angka "<<cari<<" ditemukan di indeks ke "<<q;
-			break;
-		} else if (q=5){
-			cout<<"Angka "<<cari<<" tidak ditemukan dalam array\n";
-		}
-	}
-}
+	for(int q=0;q<5;q++){if (angka[q]==cari){cout<<"Angka "<<cari<<" ditemukan di indeks ke "<<q;
+			break;} else if (q=5){cout<<"Angka "<<cari<<" tidak ditemukan dalam array\n";}}}
