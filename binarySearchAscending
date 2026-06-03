@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int awal=0, akhir=7, tengah, cari, angka [8]={2,3,4,5,6,7,8};
+	cout<<"masukkan angka yang ingin dicari\t:";
+	cin>>cari;
+	while(awal<=akhir){
+		tengah = (awal+akhir)/2;
+		if (cari>angka[tengah]){
+			awal=tengah+1;
+		} else if (cari<angka[tengah]){
+			akhir=tengah-1;
+		} else {
+			awal=akhir+1;
+		}
+	}
+	if (cari==angka[tengah]){
+		cout<<"Angka "<<cari<<" ditemukan pada indeks "<<tengah;
+	} else {
+		cout<<"Angka "<<cari<<" tidak ditemukan pada array";
+	}	
+}
