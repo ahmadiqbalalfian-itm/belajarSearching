@@ -25,13 +25,13 @@ int main(){
 		}
 	}
 	//menampilkan data yang telah diurutkan
-	cout<<"data yang telah diurutkan Ascending";
+	cout<<"Data yang telah diurutkan Ascending\n\n";
 	for(f=0;f<=12;f++){
 		cout<<nomor[f]<<" ";
 	}
 	
 	//karena data sudah urut, lanjut kita mencari nilai dengan binary search
-	cout<<"Masukkan nomor yang ingin anda cari\t:";
+	cout<<"\n\nMasukkan nomor yang ingin anda cari\t:";
 	cin>>wadah;//variabel wadah sudah tidak dipakai, bisa untuk menyipan nomor inputan user
 	
 	while(awal<=akhir){
@@ -44,11 +44,13 @@ int main(){
 			cout<<"nomor "<<wadah<<" ditemukan pada indeks "<<posisi;
 		}*/ else {//jika nomor yang dicari tidak ditemukan
 			awal=akhir+1;//maka dihentikan (ngga bisa pakai break? harusnya sih ngga karena ini while dan syaratnya udah jelas)
-			cout<<"nomor "<<wadah<<" tidak ditemukan";//kita masukkan sini aja, karena situasi dan kondisinya sama
+			//ternyata ini tetap akan dijalankan, karena kondisinya memungkinkan pencarian sampai akhir, meskipun sudah ditemukan posisi yang sesuai
 		}
 	}
 	//harusnya ini bisa ngga sih masuk while jadi else if ke 3?
 	if (wadah==nomor[posisi]){//jika looping di atas berhasil menemukan posisi nomor yang dicari
-		cout<<"nomor "<<wadah<<" ditemukan pada indeks "<<posisi;//posisinya ditampilkan, kenapa ditaruh luar while? agar
+		cout<<"\n\nNomor "<<wadah<<" ditemukan pada indeks "<<posisi<<"\n\n";//posisinya ditampilkan, kenapa ditaruh luar while? agar
+	} else {
+		cout<<"\n\nNomor "<<wadah<<" tidak ditemukan\n\n";//kita masukkan sini aja, karena situasi dan kondisinya sama
 	}
 }
