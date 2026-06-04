@@ -3,15 +3,15 @@ using namespace std;
 int main(){
 	int i,wadah, posisi,angka[5]={1,5,3,6,0};
 	for (i=0;i<=4;i++){
-		for(posisi=5;posisi>=0;posisi--){
-			if(angka[posisi]<angka[posisi-1]){
+		for(posisi=0;posisi<=5;posisi++){
+			if(angka[posisi]<angka[posisi+1]){
 				wadah=angka[posisi];
-				angka[posisi]=angka[posisi-1];
-				angka[posisi-1]=wadah;
+				angka[posisi]=angka[posisi+1];
+				angka[posisi+1]=wadah;
 			}
 		}
 	}
-	cout<<"Hasil Shorting Ascending:\n";
+	cout<<"Hasil Shorting Descending:\n";
 	for(i=0;i<5;i++){
 		cout<<angka[i]<<endl;
 	}
