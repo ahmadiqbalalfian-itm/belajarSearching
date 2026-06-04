@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+//jangan lupa penyesuaian praktikum kemain dengan modul dikit-dikit (entahlah butuh apa ngga)
+
+//deklarasikan array no hp dan variabel yang diperlukan
+int f, //iterasi
+awal, //indeks awal
+akhir, //indeks akhir
+tengah, //indeks tengah(untuk search)
+wadah,//seperti temp, untuk menyimpan sementara nilai yang dipindahkan
+nomor[12]={0,8,5,6,0,6,8,2,3,3,2,7};//no hp
