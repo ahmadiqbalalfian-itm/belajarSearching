@@ -49,4 +49,10 @@ int main(){
 			//ternyata ini tetap akan dijalankan, karena kondisinya memungkinkan pencarian sampai akhir, meskipun sudah ditemukan posisi yang sesuai
 		}
 	}
+//	if (wadah==nomor[posisi]){//jika looping di atas berhasil menemukan posisi nomor yang dicari
+//		cout<<"nomor "<<wadah<<" ditemukan pada indeks "<<posisi;//posisinya ditampilkan, kenapa ditaruh luar while? agar
+//		cout<<"\n\nNomor "<<wadah<<" ditemukan pada indeks "<<posisi<<"\n\n";//posisinya ditampilkan, kenapa ditaruh luar while? agar
+//	} else {
+//		cout<<"\n\nNomor "<<wadah<<" tidak ditemukan\n\n";//kita masukkan sini aja, karena situasi dan kondisinya sama
+//	}
 }
