@@ -40,17 +40,12 @@ int main(){
 			awal=posisi+1;//pencarian dilanjut pada bagian kanan
 		} else if(wadah<nomor[posisi]){//jika nomor yang dicari lebih kecil dari nilai di tengah
 			akhir=posisi-1;//pencarian dilanjut pada bagian kiri
-		} /*else if (wadah==nomor[posisi]){
-			cout<<"nomor "<<wadah<<" ditemukan pada indeks "<<posisi;
-		}*/ else {//jika nomor yang dicari tidak ditemukan
+		} else if (wadah==nomor[posisi]){
+			cout<<"nomor "<<wadah<<" ditemukan pada indeks "<<posisi<<"\n\n";
+			awal=akhir+1;//bismillah bisa
+		} else {//jika nomor yang dicari tidak ditemukan
 			awal=akhir+1;//maka dihentikan (ngga bisa pakai break? harusnya sih ngga karena ini while dan syaratnya udah jelas)
 			//ternyata ini tetap akan dijalankan, karena kondisinya memungkinkan pencarian sampai akhir, meskipun sudah ditemukan posisi yang sesuai
 		}
-	}
-	//harusnya ini bisa ngga sih masuk while jadi else if ke 3?
-	if (wadah==nomor[posisi]){//jika looping di atas berhasil menemukan posisi nomor yang dicari
-		cout<<"\n\nNomor "<<wadah<<" ditemukan pada indeks "<<posisi<<"\n\n";//posisinya ditampilkan, kenapa ditaruh luar while? agar
-	} else {
-		cout<<"\n\nNomor "<<wadah<<" tidak ditemukan\n\n";//kita masukkan sini aja, karena situasi dan kondisinya sama
 	}
 }
