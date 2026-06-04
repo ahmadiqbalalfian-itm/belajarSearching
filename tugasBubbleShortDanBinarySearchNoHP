@@ -29,8 +29,18 @@ int main(){
 	for(f=0;f<=12;f++){
 		cout<<nomor[f]<<" ";
 	}
-}
-
+	
 	//karena data sudah urut, lanjut kita mencari nilai dengan binary search
 	cout<<"Masukkan angka yang ingin anda cari\t:";
 	cin>>wadah;//variabel wadah sudah tidak dipakai, bisa untuk menyipan angka inputan user
+	
+	while(awal<=akhir){
+		posisi=(awal+akhir)/2;
+		if (wadah)
+	}
+	if (wadah==posisi){
+		cout<<"angka "<<wadah<<" ditemukan pada indeks "<<posisi;
+	} else{
+		cout<<"angka "<<wadah<<" tidak ditemukan";
+	}
+}
