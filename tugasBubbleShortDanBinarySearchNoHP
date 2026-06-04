@@ -7,8 +7,8 @@ int main(){
 	
 	//deklarasikan array no hp dan variabel yang diperlukan
 	int f, //iterasi
-	awal, //indeks awal
-	akhir, //indeks akhir
+	awal=0, //indeks awal
+	akhir=12, //indeks akhir
 	posisi,//posisi indeks elemen (untuk short), dan nilai tengah (untuk binary search)
 	wadah,//seperti temp, untuk menyimpan sementara nilai yang dipindahkan, juga menyimpan input nilai yang dicari (binary search)
 	nomor[12]={0,8,5,6,0,6,8,2,3,3,2,7};//no hp
