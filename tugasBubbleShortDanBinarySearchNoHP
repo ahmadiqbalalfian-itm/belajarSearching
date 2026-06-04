@@ -9,9 +9,8 @@ int main(){
 	int f, //iterasi
 	awal, //indeks awal
 	akhir, //indeks akhir
-	posisi,//posisi indeks elemen (untuk short)
-	tengah, //indeks tengah(untuk search)
-	wadah,//seperti temp, untuk menyimpan sementara nilai yang dipindahkan
+	posisi,//posisi indeks elemen (untuk short), dan nilai tengah (untuk binary search)
+	wadah,//seperti temp, untuk menyimpan sementara nilai yang dipindahkan, juga menyimpan input nilai yang dicari (binary search)
 	nomor[12]={0,8,5,6,0,6,8,2,3,3,2,7};//no hp
 	
 	//karena akan pakai binary search, maka harus dishort(urutkan) dulu
