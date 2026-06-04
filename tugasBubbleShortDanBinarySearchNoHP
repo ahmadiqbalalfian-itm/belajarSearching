@@ -1,31 +1,33 @@
 //mengurutkan nomor handphone dengan bubble short dan mencari dengan binary search secara ascending, 
 #include <iostream>
 using namespace std;
-
-//jangan lupa penyesuaian praktikum kemain dengan modul dikit-dikit (entahlah butuh apa ngga)
-
-//deklarasikan array no hp dan variabel yang diperlukan
-int f, //iterasi
-awal, //indeks awal
-akhir, //indeks akhir
-posisi,//posisi indeks elemen (untuk short)
-tengah, //indeks tengah(untuk search)
-wadah,//seperti temp, untuk menyimpan sementara nilai yang dipindahkan
-nomor[12]={0,8,5,6,0,6,8,2,3,3,2,7};//no hp
-
-
-//karena akan pakai binary search, maka harus dishort(urutkan) dulu
-
-for (f=12;f>=0;f--){//looping dimensi pertama berjalan untuk mengecek seluruh elemen
-	for (posisi=12;posisi>=0;posisi--){//kalau dimensi kedua akan menggeser elemen paling banyak sesuai jumlah elemen, bisa jadi data nilai 0 berada di akhir sementara depannya lebih besar semua
-		if(nomor[posisi-1]>nomor[posisi]){
-			wadah = nomor[posisi-1];//memindahkan(duplikat) nilai array indeks kedua dari akhir (11), ke wadah
-			nomor[posisi-1]=nomor[posisi]; //mengganti nilai array indeks 11 dengan nilai array indeks terakhir (12)
-			nomor[posisi]=wadah;//array indeks belakang kemudian diganti dengan nilai indeks sebelumnya yang lebih besar, dan diambil dari wadah
-			//karena saya penasaran dengan prosesnya, mari kita intip hehe
+int main(){
+	
+	//jangan lupa penyesuaian praktikum kemain dengan modul dikit-dikit (entahlah butuh apa ngga)
+	
+	//deklarasikan array no hp dan variabel yang diperlukan
+	int f, //iterasi
+	awal, //indeks awal
+	akhir, //indeks akhir
+	posisi,//posisi indeks elemen (untuk short)
+	tengah, //indeks tengah(untuk search)
+	wadah,//seperti temp, untuk menyimpan sementara nilai yang dipindahkan
+	nomor[12]={0,8,5,6,0,6,8,2,3,3,2,7};//no hp
+	
+	//karena akan pakai binary search, maka harus dishort(urutkan) dulu
+	
+	for (f=12;f>=0;f--){//looping dimensi pertama berjalan untuk mengecek seluruh elemen
+		for (posisi=12;posisi>=0;posisi--){//kalau dimensi kedua akan menggeser elemen paling banyak sesuai jumlah elemen, bisa jadi data nilai 0 berada di akhir sementara depannya lebih besar semua
+			if(nomor[posisi-1]>nomor[posisi]){
+				wadah = nomor[posisi-1];//memindahkan(duplikat) nilai array indeks kedua dari akhir (11), ke wadah
+				nomor[posisi-1]=nomor[posisi]; //mengganti nilai array indeks 11 dengan nilai array indeks terakhir (12)
+				nomor[posisi]=wadah;//array indeks belakang kemudian diganti dengan nilai indeks sebelumnya yang lebih besar, dan diambil dari wadah	
+			}
 		}
 	}
+	//menampilkan data yang telah diurutkan
+	cout<<"data yang telah diurutkan Ascending";
+	for(f=0;f<=12;f++){
+		cout<<nomor[f]<<" ";
+	}
 }
-
-//menampilkan data yang telah diurutkan
-
