@@ -40,19 +40,18 @@ int main(){
 			awal=posisi+1;//pencarian dilanjut pada bagian kanan
 		} else if(wadah<nomor[posisi]){//jika nomor yang dicari lebih kecil dari nilai di tengah
 			akhir=posisi-1;//pencarian dilanjut pada bagian kiri
-		} else if (wadah==nomor[posisi]){
+		} /*else if (wadah==nomor[posisi]){
 			cout<<"nomor "<<wadah<<" ditemukan pada indeks "<<posisi<<"\n\n";
 			awal=akhir+1;//bismillah bisa
-		} /*kok malah ngga muncul huhuuu*/else {//jika nomor yang dicari tidak ditemukan
-			cout<<"nomor "<<wadah<<" tidak ditemukan dalam array";//bismillah harusnya bisa ygy
+		} kok malah ngga muncul huhuuu*/else {//jika nomor yang dicari tidak ditemukan
+//			cout<<"nomor "<<wadah<<" tidak ditemukan dalam array";//bismillah harusnya bisa ygy
 			awal=akhir+1;//maka dihentikan (ngga bisa pakai break? harusnya sih ngga karena ini while dan syaratnya udah jelas)
 			//ternyata ini tetap akan dijalankan, karena kondisinya memungkinkan pencarian sampai akhir, meskipun sudah ditemukan posisi yang sesuai
 		}
 	}
-//	if (wadah==nomor[posisi]){//jika looping di atas berhasil menemukan posisi nomor yang dicari
-//		cout<<"nomor "<<wadah<<" ditemukan pada indeks "<<posisi;//posisinya ditampilkan, kenapa ditaruh luar while? agar
-//		cout<<"\n\nNomor "<<wadah<<" ditemukan pada indeks "<<posisi<<"\n\n";//posisinya ditampilkan, kenapa ditaruh luar while? agar
-//	} else {
-//		cout<<"\n\nNomor "<<wadah<<" tidak ditemukan\n\n";//kita masukkan sini aja, karena situasi dan kondisinya sama
-//	}
+	if (wadah==nomor[posisi]){//jika looping di atas berhasil menemukan posisi nomor yang dicari
+		cout<<"\n\nNomor "<<wadah<<" ditemukan pada indeks "<<posisi<<"\n\n";//posisinya ditampilkan, kenapa ditaruh luar while? agar
+	} else {
+		cout<<"\n\nNomor "<<wadah<<" tidak ditemukan\n\n";//kita masukkan sini aja, karena situasi dan kondisinya sama
+	}
 }
